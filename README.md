@@ -20,18 +20,18 @@ Once an image is generated, it is saved in Pocketbase.
 
 - Install NextJS
 - Signup at Replicate and get your API key
-- Put API key in `.env.local` file
+- Put API key in `.env.local` file (name it `REPLICATE_API_TOKEN`) (.gitignore is setup to ignore this file so it's not pushed to the repo)
 - Install Pocketbase and run it locally
 - Setup a collection in Pocketbase named `generated_images` with the following fields:
   - `prompt`: Text
   - `image_url`: URL
-- Put Pocketbase URL in `.env.local` file (usually `http://127.0.0.1:8090`)
+- Put Pocketbase URL in `.env.local` file (usually `http://127.0.0.1:8090`) (name it `POCKETBASE_URL`)
 
 ## Start the app
 
 - go to the project directory
-- > ./pocketbase serve
-- > npm run dev
+- `> ./pocketbase serve`
+- `> npm run dev`
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Notes
